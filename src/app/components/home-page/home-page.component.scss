@@ -1,0 +1,35 @@
+.profile-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+ion-menu.red-menu.menu-open {
+  --background: red;
+}
+
+/* تغيير لون النصوص داخل القائمة */
+ion-menu.red-menu.menu-open ion-label {
+  color: white;
+}
+
+/* تغيير لون الأيقونات داخل القائمة */
+ion-menu.red-menu.menu-open ion-icon {
+  color: white;
+}
+
+/* لو أردت أيضاً تلوين خلفية العناصر بشكل شفاف أو مختلف */
+ion-menu.red-menu.menu-open ion-item {
+  --background: transparent;
+  --color: white;
+}
+.profile-image {
+  width: 40%;
+  height: 40%;
+
+  object-fit: cover;
+  border-radius: 50%; /* يجعل الصورة دائرية */
+  border: 3px solid #000; /* حد أسود حول الصورة */
+  background-color: #fff; /* خلفية للصورة في حال كانت شفافة */
+}
